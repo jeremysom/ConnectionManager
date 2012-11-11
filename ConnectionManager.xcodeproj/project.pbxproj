@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B352230164F26C6007F42C4 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B35222F164F26C6007F42C4 /* Reachability.m */; };
+		6B352233164F272B007F42C4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B352232164F272B007F42C4 /* SystemConfiguration.framework */; };
 		6B4DC930164E5C6C0080A2C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B4DC92F164E5C6C0080A2C4 /* Foundation.framework */; };
 		6B4DC935164E5C6C0080A2C4 /* ConnectionManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6B4DC934164E5C6C0080A2C4 /* ConnectionManager.h */; };
 		6B4DC937164E5C6C0080A2C4 /* ConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4DC936164E5C6C0080A2C4 /* ConnectionManager.m */; };
+		6B4DC93F164E677C0080A2C4 /* CustomConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4DC93E164E677C0080A2C4 /* CustomConnection.m */; };
+		6B4DC942164E679F0080A2C4 /* CustomRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4DC941164E679F0080A2C4 /* CustomRequest.m */; };
+		6B4DC949164E6F2A0080A2C4 /* CMConnectionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4DC948164E6F2A0080A2C4 /* CMConnectionInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,11 +31,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6B35222E164F26C6007F42C4 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		6B35222F164F26C6007F42C4 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		6B352232164F272B007F42C4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		6B4DC92C164E5C6C0080A2C4 /* libConnectionManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libConnectionManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B4DC92F164E5C6C0080A2C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6B4DC933164E5C6C0080A2C4 /* ConnectionManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ConnectionManager-Prefix.pch"; sourceTree = "<group>"; };
 		6B4DC934164E5C6C0080A2C4 /* ConnectionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConnectionManager.h; sourceTree = "<group>"; };
 		6B4DC936164E5C6C0080A2C4 /* ConnectionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConnectionManager.m; sourceTree = "<group>"; };
+		6B4DC93D164E677C0080A2C4 /* CustomConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomConnection.h; sourceTree = "<group>"; };
+		6B4DC93E164E677C0080A2C4 /* CustomConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomConnection.m; sourceTree = "<group>"; };
+		6B4DC940164E679F0080A2C4 /* CustomRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomRequest.h; sourceTree = "<group>"; };
+		6B4DC941164E679F0080A2C4 /* CustomRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomRequest.m; sourceTree = "<group>"; };
+		6B4DC947164E6F2A0080A2C4 /* CMConnectionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMConnectionInfo.h; sourceTree = "<group>"; };
+		6B4DC948164E6F2A0080A2C4 /* CMConnectionInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMConnectionInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B352233164F272B007F42C4 /* SystemConfiguration.framework in Frameworks */,
 				6B4DC930164E5C6C0080A2C4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				6B4DC931164E5C6C0080A2C4 /* ConnectionManager */,
+				6B4DC932164E5C6C0080A2C4 /* Supporting Files */,
 				6B4DC92E164E5C6C0080A2C4 /* Frameworks */,
 				6B4DC92D164E5C6C0080A2C4 /* Products */,
 			);
@@ -65,6 +81,7 @@
 		6B4DC92E164E5C6C0080A2C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6B352232164F272B007F42C4 /* SystemConfiguration.framework */,
 				6B4DC92F164E5C6C0080A2C4 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -75,7 +92,14 @@
 			children = (
 				6B4DC934164E5C6C0080A2C4 /* ConnectionManager.h */,
 				6B4DC936164E5C6C0080A2C4 /* ConnectionManager.m */,
-				6B4DC932164E5C6C0080A2C4 /* Supporting Files */,
+				6B4DC93D164E677C0080A2C4 /* CustomConnection.h */,
+				6B4DC93E164E677C0080A2C4 /* CustomConnection.m */,
+				6B4DC940164E679F0080A2C4 /* CustomRequest.h */,
+				6B4DC941164E679F0080A2C4 /* CustomRequest.m */,
+				6B4DC947164E6F2A0080A2C4 /* CMConnectionInfo.h */,
+				6B4DC948164E6F2A0080A2C4 /* CMConnectionInfo.m */,
+				6B35222E164F26C6007F42C4 /* Reachability.h */,
+				6B35222F164F26C6007F42C4 /* Reachability.m */,
 			);
 			path = ConnectionManager;
 			sourceTree = "<group>";
@@ -86,6 +110,7 @@
 				6B4DC933164E5C6C0080A2C4 /* ConnectionManager-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = ConnectionManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +165,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B4DC937164E5C6C0080A2C4 /* ConnectionManager.m in Sources */,
+				6B4DC93F164E677C0080A2C4 /* CustomConnection.m in Sources */,
+				6B4DC942164E679F0080A2C4 /* CustomRequest.m in Sources */,
+				6B4DC949164E6F2A0080A2C4 /* CMConnectionInfo.m in Sources */,
+				6B352230164F26C6007F42C4 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +264,7 @@
 				6B4DC93C164E5C6C0080A2C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
